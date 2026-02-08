@@ -15,9 +15,7 @@ services:
       - 8080:8080
     environment:
       - DATABASE_URL=postgres://postgres:RCkMzVjyxhgp7k@100.117.21.123:5432/guestbook?sslmode=disable
-    depends_on:
-      db:
-        condition: service_healthy
+    
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
